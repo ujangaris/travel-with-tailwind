@@ -57,3 +57,23 @@
         - pada tulisan selain tulisan Hello World dengan warna merah
         - inspek elemet , (font nya adalah inter)
           seperti yang sudah kita setup, jika semua font nya menjadi inter
+
+## setup colors
+
+    Todo:
+
+    1.  tailwind.config.js
+        - tambahkan colors
+          kemudian tambahkan color apa saja yang mau dijadikan default setup  key dan value nya:
+            - ungu: "#5D50C6",
+            - pink: "#F85E9F",
+            - orange: "#FF5722",
+    2.  src/index.html
+        - isi clas pada h1, p, dan span dengan class color yang sudah kita buat diatas
+    3.  jalankan aplikasi
+        - klik kanana pada file index.html
+        - refresh halaman
+        - pada halaman utama akan ada :
+            - Hello World berwarna orange
+            - Coba berwarna pink
+            - coba font berwarna ungu
