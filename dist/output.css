@@ -434,6 +434,24 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "Circular STD";
+
+  src: url("../public/font/CircularStd-Bold.woff") format(".woff");
+}
+
+/* setup agar semua menjadi font inter */
+
+html {
+  font-family: inter;
+}
+
+/* setup agar setiap h1 menggunakan Circular STD */
+
+h1 {
+  font-family: Circular STD;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -532,6 +550,15 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.font-inter {
+  font-family: inter;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-red-600 {
