@@ -114,3 +114,18 @@
             - '-translate-x-1/2' artinya bergeser 50%
             'w-3/4' artinya sebesar 75%
     2.  pada browser: akan ada menu atas dan bawah
+
+## Mobile view - menampilkan dan menghilangkan menu login & sign up
+
+    Todo:
+
+    1.  src/index.html
+        - pasang cdn alpain js
+        - x-data="{open:false}" pada bagian pembungkus
+        - @click="open = !open" pada bagian button yang akan di clik
+        - tambahakan animation pada bagian menu yang akan muncul dan menghilang
+        - dosc: https://alpinejs.dev/directives/transition
+    2.  pada browser:
+        - klik menu more, maka akan muncul menu login & signup
+        - jika di klik lagi akan menghilang
+        - menu muncukl dengan soft ( karna animation yang dipasang dengan alpainjs)
