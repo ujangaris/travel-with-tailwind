@@ -98,7 +98,19 @@
         - menu bawah:
             - pasang cdn ionicon pada bagian bawah sebelum tutup body
             - pasang icon pada bagian yang dibutuhkan
+            - docs: https://ionic.io/ionicons/usage
     4.  tailwind.config.js
         - pasang warna grey(ini hanya penamaan) untuk warna tulisan yang diambil dari design figma
           agar dpt digunakan pada tailwind
     5.  pada browser: akan ada menu atas dan bawah
+
+## Mobile view - menu login & sign up
+
+    Todo:
+
+    1.  src/index.html
+        - button login & sign up
+            - 'left-1/2' artinya left 50%
+            - '-translate-x-1/2' artinya bergeser 50%
+            'w-3/4' artinya sebesar 75%
+    2.  pada browser: akan ada menu atas dan bawah
