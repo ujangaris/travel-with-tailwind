@@ -77,3 +77,28 @@
             - Hello World berwarna orange
             - Coba berwarna pink
             - coba font berwarna ungu
+
+## Mobile view - Menu atas & menu bawah
+
+    Todo:
+
+    1.  setup runing application
+        - package.json
+          - pada script tambahkan code berikut:
+            "scripts": {
+                "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",}
+          - cara menjalankannya : npm run dev
+          - buka index.html klik kanan trus open with live server
+    2.  public/assets/
+        - export image dari figma pada bagian menu untuk tampilan mobile dalam bentuk svg
+        - namakan dengan nama logo dan toggle
+    3.  src/index.html
+        - menu atas:
+            - pasang svg logo & toggle
+        - menu bawah:
+            - pasang cdn ionicon pada bagian bawah sebelum tutup body
+            - pasang icon pada bagian yang dibutuhkan
+    4.  tailwind.config.js
+        - pasang warna grey(ini hanya penamaan) untuk warna tulisan yang diambil dari design figma
+          agar dpt digunakan pada tailwind
+    5.  pada browser: akan ada menu atas dan bawah
