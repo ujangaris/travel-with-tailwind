@@ -129,3 +129,17 @@
         - klik menu more, maka akan muncul menu login & signup
         - jika di klik lagi akan menghilang
         - menu muncukl dengan soft ( karna animation yang dipasang dengan alpainjs)
+
+## Mobile view - menampilkan dan menghilangkan menu
+
+    Todo:
+
+    1.  src/index.html
+        - x-data="{open:true}" pada bagian pembungkus
+        - @click="open = !open" pada bagian button yang akan di clik
+        - tambahakan animation pada bagian menu yang akan muncul dan menghilang
+        - dosc: https://alpinejs.dev/directives/transition
+    2.  pada browser:
+        - klik menu burger dipojok kanan atas, maka akan muncul menu dibagian bawah aplikasi
+        - jika di klik lagi akan menghilang
+        - menu muncukl dengan soft ( karna animation yang dipasang dengan alpainjs)

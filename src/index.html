@@ -17,18 +17,29 @@
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
   <body>
-    <nav class="py-9 px-4">
+    <nav class="py-9 px-4" x-data="{navOpen: true}">
       <!-- menu atas -->
       <div class="container mx-auto">
         <div class="flex justify-between">
           <img src="../public/assets/logo.svg" alt="" />
-          <img src="../public//assets/toogle.svg" alt="" />
+          <img
+            @click="navOpen = ! navOpen"
+            src="../public//assets/toogle.svg"
+            alt=""
+          />
         </div>
       </div>
       <!-- menu bawah -->
       <div
+        x-show="navOpen"
         x-data="{open:false}"
         class="fixed bottom-0 right-0 left-0 bg-white p-4 border"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90"
       >
         <ul class="flex justify-between">
           <li>
