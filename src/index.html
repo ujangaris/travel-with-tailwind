@@ -21,12 +21,29 @@
       <!-- menu atas -->
       <div class="container mx-auto">
         <div class="flex justify-between">
-          <img src="../public/assets/logo.svg" alt="" />
+          <img
+            src="../public/assets/logo.svg"
+            alt=""
+            class="order-2 sm:order-2"
+          />
           <img
             @click="navOpen = ! navOpen"
             src="../public//assets/toogle.svg"
             alt=""
+            class="order-2 sm:order-1"
           />
+          <div class="order-3 hidden sm:block">
+            <button
+              class="grow bg-white px-8 py-4 rounded-full text-sm font-bold text-grey"
+            >
+              Login
+            </button>
+            <button
+              class="grow bg-ungu px-8 py-4 rounded-full text-sm font-bold text-white"
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
       </div>
       <!-- menu bawah -->

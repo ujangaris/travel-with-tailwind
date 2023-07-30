@@ -143,3 +143,21 @@
         - klik menu burger dipojok kanan atas, maka akan muncul menu dibagian bawah aplikasi
         - jika di klik lagi akan menghilang
         - menu muncukl dengan soft ( karna animation yang dipasang dengan alpainjs)
+
+## Tablet view - rubah posisi menu dengan class order
+
+    Todo:
+
+    1.  src/index.html
+        - order-1 artinya posisi pertama order-2 posisi kedua order-3 posisi ketiga
+        - sm:order-1 pada layar small posisi pertama sm:block akan ditampilkan penuh pada ukuran layar small
+        - class="order-3 hidden sm:block" artinya akan dihilangkan di ukuran layar small
+        - tambahakan animation pada bagian menu yang akan muncul dan menghilang
+        - dosc: https://tailwindcss.com/docs/order
+    2.   jalankan aplikasi agar semua perubahan berjalan dengan semestinya
+        - npm run dev
+    3.  pada browser:
+        - pada ukuran layar tablet bar menu di urutan pertama di ikuti dengan logo
+          dan pada urutan terakhir adalah  button login dan sign up
+        - jika pada ukuran small(sm) menu login sign up akan hilang,
+          dan urutan pertama logo kemudian di ikuti dengan menu burger
