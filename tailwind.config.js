@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["inter"],
+        Circular: ["Circular STD"],
       },
       colors: {
         ungu: "#5D50C6",

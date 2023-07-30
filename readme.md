@@ -152,7 +152,6 @@
         - order-1 artinya posisi pertama order-2 posisi kedua order-3 posisi ketiga
         - sm:order-1 pada layar small posisi pertama sm:block akan ditampilkan penuh pada ukuran layar small
         - class="order-3 hidden sm:block" artinya akan dihilangkan di ukuran layar small
-        - tambahakan animation pada bagian menu yang akan muncul dan menghilang
         - dosc: https://tailwindcss.com/docs/order
     2.   jalankan aplikasi agar semua perubahan berjalan dengan semestinya
         - npm run dev
@@ -161,3 +160,22 @@
           dan pada urutan terakhir adalah  button login dan sign up
         - jika pada ukuran small(sm) menu login sign up akan hilang,
           dan urutan pertama logo kemudian di ikuti dengan menu burger
+
+## Dekstop/laptop view - menu Home , Discover, Special Deals & Contact
+
+    Todo:
+
+    1.  src/index.html
+        - class="order-2 hidden lg:block" artinya akan tampil hanya dilayar large dengan urutan kedua setelah logo
+          dan akan hilang di kurusan selain large
+        - items-center agar sejajar dengan menu lainnya
+        - <img class="lg:hidden order-2 sm:order-1"/> lg:hiden artinya akan hilang di ukuran larayar large
+        - dosc: https://tailwindcss.com/docs/order
+    2.  tailwind.config.js
+        - tambahkan font Circular STD agar dapat digunakan
+    3.   jalankan aplikasi agar semua perubahan berjalan dengan semestinya
+        - npm run dev
+    4.  pada browser:
+        - pada ukuran layar laptop/dekstop menu Home, Discover dll akan muncul di posisi ke dua
+          setelah logo
+        - jika pada ukuran selain large menu Home, Discover dll akan menghilang
